@@ -1,0 +1,662 @@
+repeat_id	total_infer_time	total_distance	avg_infer_time	avg_distance
+
+========== Repeat 1 ==========
+instance=  1	infer_time=16.631s	distance=   72.86
+instance=  2	infer_time=15.941s	distance=   73.00
+instance=  3	infer_time=15.636s	distance=   72.00
+instance=  4	infer_time=15.450s	distance=   73.00
+instance=  5	infer_time=15.487s	distance=   73.29
+instance=  6	infer_time=15.511s	distance=   73.43
+instance=  7	infer_time=15.548s	distance=   73.00
+instance=  8	infer_time=15.538s	distance=   73.00
+instance=  9	infer_time=15.523s	distance=   72.57
+instance= 10	infer_time=15.561s	distance=   72.57
+instance= 11	infer_time=15.567s	distance=   73.00
+instance= 12	infer_time=15.567s	distance=   73.43
+instance= 13	infer_time=15.582s	distance=   84.83
+instance= 14	infer_time=15.572s	distance=   72.43
+instance= 15	infer_time=15.599s	distance=   72.29
+instance= 16	infer_time=15.653s	distance=   72.43
+instance= 17	infer_time=15.665s	distance=   73.00
+instance= 18	infer_time=15.689s	distance=   73.00
+instance= 19	infer_time=15.715s	distance=   72.29
+instance= 20	infer_time=15.738s	distance=   72.71
+instance= 21	infer_time=15.732s	distance=   73.29
+instance= 22	infer_time=15.732s	distance=   73.00
+instance= 23	infer_time=15.719s	distance=   71.86
+instance= 24	infer_time=15.699s	distance=   73.86
+instance= 25	infer_time=15.730s	distance=   74.00
+instance= 26	infer_time=15.696s	distance=   72.86
+instance= 27	infer_time=15.728s	distance=   73.14
+instance= 28	infer_time=15.729s	distance=   73.00
+instance= 29	infer_time=15.709s	distance=   64.38
+instance= 30	infer_time=15.708s	distance=   73.29
+instance= 31	infer_time=15.694s	distance=   72.29
+instance= 32	infer_time=15.717s	distance=   73.14
+instance= 33	infer_time=15.709s	distance=   72.71
+instance= 34	infer_time=15.714s	distance=   72.43
+instance= 35	infer_time=15.711s	distance=   72.86
+instance= 36	infer_time=15.705s	distance=   72.57
+instance= 37	infer_time=15.762s	distance=   73.00
+instance= 38	infer_time=15.713s	distance=   84.33
+instance= 39	infer_time=15.706s	distance=   73.00
+instance= 40	infer_time=15.706s	distance=   72.14
+instance= 41	infer_time=15.798s	distance=   73.71
+instance= 42	infer_time=15.684s	distance=   85.67
+instance= 43	infer_time=15.686s	distance=   72.57
+instance= 44	infer_time=15.681s	distance=   72.43
+instance= 45	infer_time=15.676s	distance=   72.71
+instance= 46	infer_time=15.658s	distance=   72.71
+instance= 47	infer_time=15.657s	distance=   72.14
+instance= 48	infer_time=15.695s	distance=   73.14
+instance= 49	infer_time=15.700s	distance=   71.86
+instance= 50	infer_time=15.699s	distance=   72.71
+instance= 51	infer_time=15.715s	distance=   72.86
+instance= 52	infer_time=15.689s	distance=   73.57
+instance= 53	infer_time=15.704s	distance=   72.71
+instance= 54	infer_time=15.704s	distance=   73.29
+instance= 55	infer_time=15.710s	distance=   72.57
+instance= 56	infer_time=15.691s	distance=   72.86
+instance= 57	infer_time=15.716s	distance=   73.00
+instance= 58	infer_time=15.707s	distance=   72.86
+instance= 59	infer_time=15.729s	distance=   72.86
+instance= 60	infer_time=15.715s	distance=   73.14
+instance= 61	infer_time=15.693s	distance=   73.57
+instance= 62	infer_time=15.698s	distance=   73.00
+instance= 63	infer_time=15.714s	distance=   72.86
+instance= 64	infer_time=15.708s	distance=   72.57
+instance= 65	infer_time=15.702s	distance=   72.57
+instance= 66	infer_time=15.695s	distance=   73.43
+instance= 67	infer_time=15.701s	distance=   84.67
+instance= 68	infer_time=15.705s	distance=   73.43
+instance= 69	infer_time=15.703s	distance=   73.14
+instance= 70	infer_time=15.704s	distance=   84.67
+instance= 71	infer_time=15.698s	distance=   73.57
+instance= 72	infer_time=15.687s	distance=   73.29
+instance= 73	infer_time=15.692s	distance=   72.43
+instance= 74	infer_time=15.685s	distance=   72.29
+instance= 75	infer_time=15.696s	distance=   64.25
+instance= 76	infer_time=15.691s	distance=   72.29
+instance= 77	infer_time=15.687s	distance=   72.14
+instance= 78	infer_time=15.701s	distance=   72.29
+instance= 79	infer_time=15.707s	distance=   72.86
+instance= 80	infer_time=15.691s	distance=   72.71
+instance= 81	infer_time=15.703s	distance=   73.14
+instance= 82	infer_time=15.698s	distance=   72.29
+instance= 83	infer_time=15.703s	distance=   73.71
+instance= 84	infer_time=15.700s	distance=   73.43
+instance= 85	infer_time=15.704s	distance=   74.00
+instance= 86	infer_time=15.700s	distance=   85.50
+instance= 87	infer_time=15.712s	distance=   85.17
+instance= 88	infer_time=15.683s	distance=   73.43
+instance= 89	infer_time=15.701s	distance=   72.43
+instance= 90	infer_time=15.693s	distance=   72.29
+instance= 91	infer_time=15.695s	distance=   73.14
+instance= 92	infer_time=15.690s	distance=   72.29
+instance= 93	infer_time=15.722s	distance=   72.57
+instance= 94	infer_time=15.695s	distance=   73.43
+instance= 95	infer_time=15.681s	distance=   72.29
+instance= 96	infer_time=15.696s	distance=   73.14
+instance= 97	infer_time=15.705s	distance=   72.86
+instance= 98	infer_time=15.704s	distance=   73.00
+instance= 99	infer_time=15.693s	distance=   72.57
+instance=100	infer_time=15.694s	distance=   74.00
+instance=101	infer_time=15.671s	distance=   72.71
+instance=102	infer_time=15.683s	distance=   73.57
+instance=103	infer_time=15.694s	distance=   73.43
+instance=104	infer_time=15.705s	distance=   73.00
+instance=105	infer_time=15.698s	distance=   73.14
+instance=106	infer_time=15.707s	distance=   73.00
+instance=107	infer_time=15.696s	distance=   72.71
+instance=108	infer_time=15.707s	distance=   73.29
+instance=109	infer_time=15.714s	distance=   73.43
+instance=110	infer_time=15.709s	distance=   72.29
+instance=111	infer_time=15.687s	distance=   73.00
+instance=112	infer_time=15.690s	distance=   72.71
+instance=113	infer_time=15.725s	distance=   73.71
+instance=114	infer_time=15.684s	distance=   73.29
+instance=115	infer_time=15.697s	distance=   73.29
+instance=116	infer_time=15.710s	distance=   73.43
+instance=117	infer_time=15.700s	distance=   73.00
+instance=118	infer_time=15.694s	distance=   72.86
+instance=119	infer_time=15.690s	distance=   72.71
+instance=120	infer_time=15.669s	distance=   72.57
+instance=121	infer_time=15.687s	distance=   73.14
+instance=122	infer_time=15.672s	distance=   73.14
+instance=123	infer_time=15.690s	distance=   73.71
+instance=124	infer_time=15.683s	distance=   73.00
+instance=125	infer_time=15.674s	distance=   72.29
+instance=126	infer_time=15.688s	distance=   72.71
+instance=127	infer_time=15.691s	distance=   72.71
+instance=128	infer_time=15.686s	distance=   73.14
+Repeat 1 summary: total_infer=2008.834s  total_dist=9400.31  avg_infer=15.694s  avg_dist=73.44
+
+========== Repeat 2 ==========
+instance=  1	infer_time=15.723s	distance=   72.57
+instance=  2	infer_time=15.684s	distance=   72.71
+instance=  3	infer_time=15.666s	distance=   72.43
+instance=  4	infer_time=15.686s	distance=   72.71
+instance=  5	infer_time=15.664s	distance=   73.14
+instance=  6	infer_time=15.681s	distance=   73.43
+instance=  7	infer_time=15.676s	distance=   73.00
+instance=  8	infer_time=15.699s	distance=   72.71
+instance=  9	infer_time=15.693s	distance=   72.43
+instance= 10	infer_time=15.691s	distance=   73.00
+instance= 11	infer_time=15.674s	distance=   73.00
+instance= 12	infer_time=15.687s	distance=   73.43
+instance= 13	infer_time=15.690s	distance=   84.33
+instance= 14	infer_time=15.685s	distance=   72.71
+instance= 15	infer_time=15.696s	distance=   72.57
+instance= 16	infer_time=15.700s	distance=   73.14
+instance= 17	infer_time=15.710s	distance=   72.86
+instance= 18	infer_time=15.708s	distance=   73.14
+instance= 19	infer_time=15.709s	distance=   72.57
+instance= 20	infer_time=15.699s	distance=   73.00
+instance= 21	infer_time=15.706s	distance=   73.14
+instance= 22	infer_time=15.712s	distance=   72.86
+instance= 23	infer_time=15.719s	distance=   72.71
+instance= 24	infer_time=15.726s	distance=   73.57
+instance= 25	infer_time=15.732s	distance=   73.57
+instance= 26	infer_time=15.725s	distance=   72.71
+instance= 27	infer_time=15.718s	distance=   74.14
+instance= 28	infer_time=15.698s	distance=   73.57
+instance= 29	infer_time=15.712s	distance=   64.12
+instance= 30	infer_time=15.731s	distance=   73.57
+instance= 31	infer_time=15.717s	distance=   72.71
+instance= 32	infer_time=15.719s	distance=   73.43
+instance= 33	infer_time=15.724s	distance=   72.57
+instance= 34	infer_time=15.724s	distance=   72.43
+instance= 35	infer_time=15.711s	distance=   72.57
+instance= 36	infer_time=15.712s	distance=   72.14
+instance= 37	infer_time=15.710s	distance=   73.00
+instance= 38	infer_time=15.697s	distance=   84.67
+instance= 39	infer_time=15.700s	distance=   72.86
+instance= 40	infer_time=15.705s	distance=   72.29
+instance= 41	infer_time=15.685s	distance=   73.57
+instance= 42	infer_time=15.696s	distance=   84.83
+instance= 43	infer_time=15.694s	distance=   73.14
+instance= 44	infer_time=15.688s	distance=   72.86
+instance= 45	infer_time=15.684s	distance=   72.57
+instance= 46	infer_time=15.703s	distance=   73.29
+instance= 47	infer_time=15.693s	distance=   72.43
+instance= 48	infer_time=15.700s	distance=   73.29
+instance= 49	infer_time=15.689s	distance=   72.71
+instance= 50	infer_time=15.696s	distance=   72.43
+instance= 51	infer_time=15.686s	distance=   73.00
+instance= 52	infer_time=15.672s	distance=   72.86
+instance= 53	infer_time=15.709s	distance=   73.29
+instance= 54	infer_time=15.697s	distance=   73.43
+instance= 55	infer_time=15.724s	distance=   72.43
+instance= 56	infer_time=15.713s	distance=   72.71
+instance= 57	infer_time=15.715s	distance=   72.43
+instance= 58	infer_time=15.693s	distance=   73.00
+instance= 59	infer_time=15.694s	distance=   72.29
+instance= 60	infer_time=15.687s	distance=   72.86
+instance= 61	infer_time=15.698s	distance=   74.00
+instance= 62	infer_time=15.729s	distance=   72.57
+instance= 63	infer_time=15.698s	distance=   73.00
+instance= 64	infer_time=15.700s	distance=   72.57
+instance= 65	infer_time=15.720s	distance=   72.86
+instance= 66	infer_time=15.712s	distance=   73.14
+instance= 67	infer_time=15.708s	distance=   84.50
+instance= 68	infer_time=15.689s	distance=   72.86
+instance= 69	infer_time=15.712s	distance=   73.29
+instance= 70	infer_time=15.706s	distance=   84.17
+instance= 71	infer_time=15.720s	distance=   74.00
+instance= 72	infer_time=15.681s	distance=   73.57
+instance= 73	infer_time=15.719s	distance=   72.43
+instance= 74	infer_time=15.693s	distance=   72.00
+instance= 75	infer_time=15.707s	distance=   63.88
+instance= 76	infer_time=15.689s	distance=   72.14
+instance= 77	infer_time=15.700s	distance=   72.29
+instance= 78	infer_time=15.715s	distance=   72.57
+instance= 79	infer_time=15.706s	distance=   73.29
+instance= 80	infer_time=15.690s	distance=   72.71
+instance= 81	infer_time=15.699s	distance=   73.43
+instance= 82	infer_time=15.698s	distance=   73.29
+instance= 83	infer_time=15.687s	distance=   73.43
+instance= 84	infer_time=15.690s	distance=   73.00
+instance= 85	infer_time=15.702s	distance=   73.43
+instance= 86	infer_time=15.697s	distance=   85.17
+instance= 87	infer_time=15.710s	distance=   85.33
+instance= 88	infer_time=15.683s	distance=   73.57
+instance= 89	infer_time=15.669s	distance=   72.57
+instance= 90	infer_time=15.675s	distance=   72.57
+instance= 91	infer_time=15.676s	distance=   73.00
+instance= 92	infer_time=15.668s	distance=   72.43
+instance= 93	infer_time=15.674s	distance=   73.14
+instance= 94	infer_time=15.675s	distance=   73.29
+instance= 95	infer_time=15.665s	distance=   72.57
+instance= 96	infer_time=15.691s	distance=   72.71
+instance= 97	infer_time=15.685s	distance=   73.00
+instance= 98	infer_time=15.677s	distance=   72.43
+instance= 99	infer_time=15.698s	distance=   71.86
+instance=100	infer_time=15.683s	distance=   73.14
+instance=101	infer_time=15.709s	distance=   73.14
+instance=102	infer_time=15.679s	distance=   73.14
+instance=103	infer_time=15.667s	distance=   73.29
+instance=104	infer_time=15.673s	distance=   72.86
+instance=105	infer_time=15.680s	distance=   72.86
+instance=106	infer_time=15.682s	distance=   72.86
+instance=107	infer_time=15.683s	distance=   72.57
+instance=108	infer_time=15.693s	distance=   73.43
+instance=109	infer_time=15.669s	distance=   73.00
+instance=110	infer_time=15.674s	distance=   72.43
+instance=111	infer_time=15.682s	distance=   73.57
+instance=112	infer_time=15.705s	distance=   73.00
+instance=113	infer_time=15.703s	distance=   73.71
+instance=114	infer_time=15.703s	distance=   73.71
+instance=115	infer_time=15.714s	distance=   73.57
+instance=116	infer_time=15.699s	distance=   72.86
+instance=117	infer_time=15.723s	distance=   73.29
+instance=118	infer_time=15.700s	distance=   72.86
+instance=119	infer_time=15.696s	distance=   72.86
+instance=120	infer_time=15.712s	distance=   72.14
+instance=121	infer_time=15.707s	distance=   73.00
+instance=122	infer_time=15.697s	distance=   72.43
+instance=123	infer_time=15.709s	distance=   73.43
+instance=124	infer_time=15.699s	distance=   72.71
+instance=125	infer_time=15.710s	distance=   72.71
+instance=126	infer_time=15.696s	distance=   72.71
+instance=127	infer_time=15.687s	distance=   72.43
+instance=128	infer_time=15.725s	distance=   72.71
+Repeat 2 summary: total_infer=2009.306s  total_dist=9399.43  avg_infer=15.698s  avg_dist=73.43
+
+========== Repeat 3 ==========
+instance=  1	infer_time=15.730s	distance=   72.86
+instance=  2	infer_time=15.702s	distance=   73.71
+instance=  3	infer_time=15.715s	distance=   72.71
+instance=  4	infer_time=15.716s	distance=   72.43
+instance=  5	infer_time=15.714s	distance=   72.86
+instance=  6	infer_time=15.698s	distance=   73.00
+instance=  7	infer_time=15.719s	distance=   73.43
+instance=  8	infer_time=15.710s	distance=   72.57
+instance=  9	infer_time=15.703s	distance=   72.86
+instance= 10	infer_time=15.728s	distance=   73.29
+instance= 11	infer_time=15.712s	distance=   73.43
+instance= 12	infer_time=15.718s	distance=   73.00
+instance= 13	infer_time=15.714s	distance=   84.50
+instance= 14	infer_time=15.698s	distance=   73.43
+instance= 15	infer_time=15.721s	distance=   73.00
+instance= 16	infer_time=15.701s	distance=   73.00
+instance= 17	infer_time=15.707s	distance=   73.00
+instance= 18	infer_time=15.697s	distance=   73.00
+instance= 19	infer_time=15.714s	distance=   72.43
+instance= 20	infer_time=15.684s	distance=   73.00
+instance= 21	infer_time=15.700s	distance=   73.57
+instance= 22	infer_time=15.717s	distance=   72.71
+instance= 23	infer_time=15.716s	distance=   72.00
+instance= 24	infer_time=15.746s	distance=   73.43
+instance= 25	infer_time=15.703s	distance=   73.71
+instance= 26	infer_time=15.694s	distance=   72.43
+instance= 27	infer_time=15.703s	distance=   73.14
+instance= 28	infer_time=15.700s	distance=   73.43
+instance= 29	infer_time=15.712s	distance=   64.00
+instance= 30	infer_time=15.699s	distance=   73.00
+instance= 31	infer_time=15.706s	distance=   72.57
+instance= 32	infer_time=15.709s	distance=   73.43
+instance= 33	infer_time=15.717s	distance=   72.00
+instance= 34	infer_time=15.699s	distance=   73.14
+instance= 35	infer_time=15.712s	distance=   73.29
+instance= 36	infer_time=15.706s	distance=   72.57
+instance= 37	infer_time=15.708s	distance=   73.14
+instance= 38	infer_time=15.690s	distance=   84.33
+instance= 39	infer_time=15.705s	distance=   73.29
+instance= 40	infer_time=15.702s	distance=   72.14
+instance= 41	infer_time=15.684s	distance=   72.86
+instance= 42	infer_time=15.709s	distance=   85.33
+instance= 43	infer_time=15.694s	distance=   73.00
+instance= 44	infer_time=15.716s	distance=   72.29
+instance= 45	infer_time=15.700s	distance=   72.43
+instance= 46	infer_time=15.700s	distance=   73.14
+instance= 47	infer_time=15.711s	distance=   72.57
+instance= 48	infer_time=15.697s	distance=   73.14
+instance= 49	infer_time=15.708s	distance=   72.00
+instance= 50	infer_time=15.701s	distance=   72.71
+instance= 51	infer_time=15.705s	distance=   73.00
+instance= 52	infer_time=15.716s	distance=   73.00
+instance= 53	infer_time=15.703s	distance=   72.71
+instance= 54	infer_time=15.693s	distance=   72.86
+instance= 55	infer_time=15.695s	distance=   72.29
+instance= 56	infer_time=15.678s	distance=   73.14
+instance= 57	infer_time=15.674s	distance=   72.43
+instance= 58	infer_time=15.684s	distance=   72.57
+instance= 59	infer_time=15.675s	distance=   72.57
+instance= 60	infer_time=15.692s	distance=   74.14
+instance= 61	infer_time=15.676s	distance=   73.57
+instance= 62	infer_time=15.675s	distance=   73.57
+instance= 63	infer_time=15.673s	distance=   73.00
+instance= 64	infer_time=15.723s	distance=   72.29
+instance= 65	infer_time=15.679s	distance=   73.00
+instance= 66	infer_time=15.683s	distance=   74.14
+instance= 67	infer_time=15.674s	distance=   84.83
+instance= 68	infer_time=15.676s	distance=   73.14
+instance= 69	infer_time=15.695s	distance=   73.29
+instance= 70	infer_time=15.664s	distance=   84.00
+instance= 71	infer_time=15.665s	distance=   72.71
+instance= 72	infer_time=15.673s	distance=   73.00
+instance= 73	infer_time=15.687s	distance=   72.57
+instance= 74	infer_time=15.698s	distance=   72.00
+instance= 75	infer_time=15.670s	distance=   63.75
+instance= 76	infer_time=15.684s	distance=   73.00
+instance= 77	infer_time=15.671s	distance=   72.86
+instance= 78	infer_time=15.660s	distance=   72.86
+instance= 79	infer_time=15.672s	distance=   72.43
+instance= 80	infer_time=15.685s	distance=   72.86
+instance= 81	infer_time=15.701s	distance=   73.14
+instance= 82	infer_time=15.704s	distance=   72.29
+instance= 83	infer_time=15.717s	distance=   73.71
+instance= 84	infer_time=15.709s	distance=   72.57
+instance= 85	infer_time=15.709s	distance=   73.43
+instance= 86	infer_time=15.705s	distance=   85.33
+instance= 87	infer_time=15.738s	distance=   84.67
+instance= 88	infer_time=15.710s	distance=   73.57
+instance= 89	infer_time=15.710s	distance=   72.86
+instance= 90	infer_time=15.702s	distance=   72.29
+instance= 91	infer_time=15.699s	distance=   73.57
+instance= 92	infer_time=15.717s	distance=   72.43
+instance= 93	infer_time=15.701s	distance=   73.29
+instance= 94	infer_time=15.701s	distance=   73.14
+instance= 95	infer_time=15.703s	distance=   72.14
+instance= 96	infer_time=15.712s	distance=   73.29
+instance= 97	infer_time=15.706s	distance=   73.29
+instance= 98	infer_time=15.713s	distance=   72.86
+instance= 99	infer_time=15.730s	distance=   72.14
+instance=100	infer_time=15.700s	distance=   73.00
+instance=101	infer_time=15.706s	distance=   73.00
+instance=102	infer_time=15.704s	distance=   73.00
+instance=103	infer_time=15.711s	distance=   73.00
+instance=104	infer_time=15.687s	distance=   73.14
+instance=105	infer_time=15.704s	distance=   72.86
+instance=106	infer_time=15.697s	distance=   73.00
+instance=107	infer_time=15.693s	distance=   72.57
+instance=108	infer_time=15.702s	distance=   73.43
+instance=109	infer_time=15.702s	distance=   72.57
+instance=110	infer_time=15.714s	distance=   72.43
+instance=111	infer_time=15.703s	distance=   72.86
+instance=112	infer_time=15.711s	distance=   72.86
+instance=113	infer_time=15.702s	distance=   73.57
+instance=114	infer_time=15.697s	distance=   73.29
+instance=115	infer_time=15.706s	distance=   73.57
+instance=116	infer_time=15.703s	distance=   73.71
+instance=117	infer_time=15.706s	distance=   73.43
+instance=118	infer_time=15.711s	distance=   72.71
+instance=119	infer_time=15.706s	distance=   72.29
+instance=120	infer_time=15.704s	distance=   72.14
+instance=121	infer_time=15.694s	distance=   72.57
+instance=122	infer_time=15.714s	distance=   73.00
+instance=123	infer_time=15.710s	distance=   73.14
+instance=124	infer_time=15.695s	distance=   73.29
+instance=125	infer_time=15.714s	distance=   72.43
+instance=126	infer_time=15.711s	distance=   72.71
+instance=127	infer_time=15.711s	distance=   73.00
+instance=128	infer_time=15.697s	distance=   72.71
+Repeat 3 summary: total_infer=2009.762s  total_dist=9399.18  avg_infer=15.701s  avg_dist=73.43
+
+========== Repeat 4 ==========
+instance=  1	infer_time=15.698s	distance=   72.43
+instance=  2	infer_time=15.693s	distance=   73.57
+instance=  3	infer_time=15.691s	distance=   72.29
+instance=  4	infer_time=16.090s	distance=   72.43
+instance=  5	infer_time=15.726s	distance=   73.14
+instance=  6	infer_time=15.701s	distance=   73.14
+instance=  7	infer_time=15.714s	distance=   73.29
+instance=  8	infer_time=15.712s	distance=   72.71
+instance=  9	infer_time=15.708s	distance=   72.86
+instance= 10	infer_time=15.699s	distance=   73.29
+instance= 11	infer_time=15.716s	distance=   73.00
+instance= 12	infer_time=15.696s	distance=   73.00
+instance= 13	infer_time=15.703s	distance=   84.33
+instance= 14	infer_time=15.700s	distance=   72.57
+instance= 15	infer_time=15.703s	distance=   73.00
+instance= 16	infer_time=15.704s	distance=   72.86
+instance= 17	infer_time=15.704s	distance=   73.14
+instance= 18	infer_time=15.702s	distance=   72.86
+instance= 19	infer_time=15.687s	distance=   72.71
+instance= 20	infer_time=15.696s	distance=   72.86
+instance= 21	infer_time=15.712s	distance=   73.43
+instance= 22	infer_time=15.721s	distance=   72.43
+instance= 23	infer_time=15.683s	distance=   71.86
+instance= 24	infer_time=15.669s	distance=   74.00
+instance= 25	infer_time=15.651s	distance=   73.71
+instance= 26	infer_time=15.686s	distance=   72.57
+instance= 27	infer_time=15.670s	distance=   73.00
+instance= 28	infer_time=15.686s	distance=   73.00
+instance= 29	infer_time=15.693s	distance=   63.88
+instance= 30	infer_time=15.702s	distance=   72.86
+instance= 31	infer_time=15.673s	distance=   72.43
+instance= 32	infer_time=15.689s	distance=   73.43
+instance= 33	infer_time=15.685s	distance=   72.57
+instance= 34	infer_time=15.693s	distance=   73.00
+instance= 35	infer_time=15.693s	distance=   72.86
+instance= 36	infer_time=15.708s	distance=   72.14
+instance= 37	infer_time=15.675s	distance=   72.86
+instance= 38	infer_time=15.691s	distance=   85.17
+instance= 39	infer_time=15.679s	distance=   72.57
+instance= 40	infer_time=15.679s	distance=   72.29
+instance= 41	infer_time=15.687s	distance=   73.43
+instance= 42	infer_time=15.665s	distance=   84.67
+instance= 43	infer_time=15.702s	distance=   72.43
+instance= 44	infer_time=15.684s	distance=   72.71
+instance= 45	infer_time=15.685s	distance=   72.57
+instance= 46	infer_time=15.684s	distance=   73.86
+instance= 47	infer_time=15.692s	distance=   72.57
+instance= 48	infer_time=15.715s	distance=   73.57
+instance= 49	infer_time=15.712s	distance=   72.29
+instance= 50	infer_time=15.713s	distance=   72.71
+instance= 51	infer_time=15.709s	distance=   72.57
+instance= 52	infer_time=15.715s	distance=   72.86
+instance= 53	infer_time=15.712s	distance=   73.14
+instance= 54	infer_time=15.703s	distance=   73.43
+instance= 55	infer_time=15.704s	distance=   72.43
+instance= 56	infer_time=15.702s	distance=   72.71
+instance= 57	infer_time=15.707s	distance=   72.57
+instance= 58	infer_time=15.705s	distance=   73.71
+instance= 59	infer_time=15.713s	distance=   72.71
+instance= 60	infer_time=15.702s	distance=   73.14
+instance= 61	infer_time=15.702s	distance=   73.29
+instance= 62	infer_time=15.702s	distance=   73.57
+instance= 63	infer_time=15.698s	distance=   73.29
+instance= 64	infer_time=15.698s	distance=   72.71
+instance= 65	infer_time=15.705s	distance=   72.86
+instance= 66	infer_time=15.698s	distance=   73.14
+instance= 67	infer_time=15.718s	distance=   84.33
+instance= 68	infer_time=15.688s	distance=   73.00
+instance= 69	infer_time=15.710s	distance=   72.86
+instance= 70	infer_time=15.697s	distance=   85.00
+instance= 71	infer_time=15.717s	distance=   73.14
+instance= 72	infer_time=15.713s	distance=   73.14
+instance= 73	infer_time=15.688s	distance=   73.00
+instance= 74	infer_time=15.683s	distance=   72.71
+instance= 75	infer_time=15.685s	distance=   64.00
+instance= 76	infer_time=15.696s	distance=   72.14
+instance= 77	infer_time=15.670s	distance=   72.57
+instance= 78	infer_time=15.702s	distance=   72.86
+instance= 79	infer_time=15.697s	distance=   72.86
+instance= 80	infer_time=15.710s	distance=   72.86
+instance= 81	infer_time=15.702s	distance=   73.71
+instance= 82	infer_time=15.692s	distance=   72.14
+instance= 83	infer_time=15.705s	distance=   73.71
+instance= 84	infer_time=15.705s	distance=   72.57
+instance= 85	infer_time=15.702s	distance=   74.43
+instance= 86	infer_time=15.703s	distance=   85.50
+instance= 87	infer_time=15.704s	distance=   85.33
+instance= 88	infer_time=15.712s	distance=   73.43
+instance= 89	infer_time=15.699s	distance=   72.86
+instance= 90	infer_time=15.692s	distance=   72.71
+instance= 91	infer_time=15.696s	distance=   73.00
+instance= 92	infer_time=15.707s	distance=   72.43
+instance= 93	infer_time=15.702s	distance=   73.14
+instance= 94	infer_time=15.704s	distance=   73.29
+instance= 95	infer_time=15.701s	distance=   72.57
+instance= 96	infer_time=15.713s	distance=   72.71
+instance= 97	infer_time=15.707s	distance=   73.29
+instance= 98	infer_time=15.690s	distance=   72.57
+instance= 99	infer_time=15.696s	distance=   72.57
+instance=100	infer_time=15.698s	distance=   72.71
+instance=101	infer_time=15.706s	distance=   72.71
+instance=102	infer_time=15.694s	distance=   73.29
+instance=103	infer_time=15.702s	distance=   72.71
+instance=104	infer_time=15.692s	distance=   73.43
+instance=105	infer_time=15.726s	distance=   73.14
+instance=106	infer_time=15.687s	distance=   73.29
+instance=107	infer_time=15.721s	distance=   72.29
+instance=108	infer_time=15.717s	distance=   73.29
+instance=109	infer_time=15.707s	distance=   72.57
+instance=110	infer_time=15.709s	distance=   72.43
+instance=111	infer_time=15.708s	distance=   73.14
+instance=112	infer_time=15.697s	distance=   72.86
+instance=113	infer_time=15.692s	distance=   73.29
+instance=114	infer_time=15.701s	distance=   73.00
+instance=115	infer_time=15.703s	distance=   73.57
+instance=116	infer_time=15.703s	distance=   73.29
+instance=117	infer_time=15.724s	distance=   73.29
+instance=118	infer_time=15.710s	distance=   72.71
+instance=119	infer_time=15.691s	distance=   73.29
+instance=120	infer_time=15.658s	distance=   72.29
+instance=121	infer_time=15.674s	distance=   72.57
+instance=122	infer_time=15.668s	distance=   72.71
+instance=123	infer_time=15.685s	distance=   73.57
+instance=124	infer_time=15.684s	distance=   72.86
+instance=125	infer_time=15.670s	distance=   72.71
+instance=126	infer_time=15.684s	distance=   72.71
+instance=127	infer_time=15.685s	distance=   72.71
+instance=128	infer_time=15.678s	distance=   73.14
+Repeat 4 summary: total_infer=2009.677s  total_dist=9400.49  avg_infer=15.701s  avg_dist=73.44
+
+========== Repeat 5 ==========
+instance=  1	infer_time=15.692s	distance=   72.14
+instance=  2	infer_time=15.825s	distance=   72.71
+instance=  3	infer_time=15.679s	distance=   72.57
+instance=  4	infer_time=15.693s	distance=   72.29
+instance=  5	infer_time=15.668s	distance=   73.00
+instance=  6	infer_time=15.700s	distance=   72.71
+instance=  7	infer_time=15.692s	distance=   73.43
+instance=  8	infer_time=15.668s	distance=   73.14
+instance=  9	infer_time=15.673s	distance=   72.57
+instance= 10	infer_time=15.680s	distance=   72.57
+instance= 11	infer_time=15.686s	distance=   73.00
+instance= 12	infer_time=15.672s	distance=   73.14
+instance= 13	infer_time=15.673s	distance=   84.33
+instance= 14	infer_time=15.659s	distance=   73.29
+instance= 15	infer_time=15.674s	distance=   72.57
+instance= 16	infer_time=15.707s	distance=   72.57
+instance= 17	infer_time=15.705s	distance=   73.00
+instance= 18	infer_time=15.701s	distance=   73.14
+instance= 19	infer_time=15.688s	distance=   72.71
+instance= 20	infer_time=15.708s	distance=   73.14
+instance= 21	infer_time=15.703s	distance=   73.43
+instance= 22	infer_time=15.716s	distance=   72.71
+instance= 23	infer_time=15.689s	distance=   72.00
+instance= 24	infer_time=15.707s	distance=   73.29
+instance= 25	infer_time=15.704s	distance=   73.57
+instance= 26	infer_time=15.693s	distance=   72.86
+instance= 27	infer_time=15.721s	distance=   73.57
+instance= 28	infer_time=15.701s	distance=   73.14
+instance= 29	infer_time=15.716s	distance=   64.25
+instance= 30	infer_time=15.700s	distance=   73.43
+instance= 31	infer_time=15.705s	distance=   72.29
+instance= 32	infer_time=15.711s	distance=   73.71
+instance= 33	infer_time=15.690s	distance=   72.29
+instance= 34	infer_time=15.713s	distance=   72.71
+instance= 35	infer_time=15.693s	distance=   72.86
+instance= 36	infer_time=15.691s	distance=   73.14
+instance= 37	infer_time=15.704s	distance=   73.00
+instance= 38	infer_time=15.715s	distance=   85.00
+instance= 39	infer_time=15.715s	distance=   73.00
+instance= 40	infer_time=15.700s	distance=   72.29
+instance= 41	infer_time=15.712s	distance=   73.43
+instance= 42	infer_time=15.702s	distance=   85.33
+instance= 43	infer_time=15.706s	distance=   72.57
+instance= 44	infer_time=15.701s	distance=   72.71
+instance= 45	infer_time=15.704s	distance=   73.14
+instance= 46	infer_time=15.708s	distance=   72.86
+instance= 47	infer_time=15.699s	distance=   72.43
+instance= 48	infer_time=15.703s	distance=   73.00
+instance= 49	infer_time=15.709s	distance=   72.14
+instance= 50	infer_time=15.725s	distance=   73.14
+instance= 51	infer_time=15.700s	distance=   72.86
+instance= 52	infer_time=15.701s	distance=   73.29
+instance= 53	infer_time=15.709s	distance=   72.86
+instance= 54	infer_time=15.703s	distance=   73.43
+instance= 55	infer_time=15.717s	distance=   72.43
+instance= 56	infer_time=15.707s	distance=   73.00
+instance= 57	infer_time=15.705s	distance=   72.86
+instance= 58	infer_time=15.688s	distance=   72.71
+instance= 59	infer_time=15.707s	distance=   72.71
+instance= 60	infer_time=15.687s	distance=   73.29
+instance= 61	infer_time=15.708s	distance=   73.00
+instance= 62	infer_time=15.709s	distance=   73.00
+instance= 63	infer_time=15.699s	distance=   73.29
+instance= 64	infer_time=15.684s	distance=   72.57
+instance= 65	infer_time=15.689s	distance=   72.86
+instance= 66	infer_time=15.702s	distance=   73.29
+instance= 67	infer_time=15.699s	distance=   84.67
+instance= 68	infer_time=15.705s	distance=   72.57
+instance= 69	infer_time=15.719s	distance=   72.71
+instance= 70	infer_time=15.690s	distance=   84.50
+instance= 71	infer_time=15.711s	distance=   73.29
+instance= 72	infer_time=15.687s	distance=   73.29
+instance= 73	infer_time=15.702s	distance=   72.43
+instance= 74	infer_time=15.712s	distance=   72.29
+instance= 75	infer_time=15.705s	distance=   64.12
+instance= 76	infer_time=15.716s	distance=   73.14
+instance= 77	infer_time=15.709s	distance=   72.14
+instance= 78	infer_time=15.704s	distance=   72.29
+instance= 79	infer_time=15.686s	distance=   73.14
+instance= 80	infer_time=15.689s	distance=   72.86
+instance= 81	infer_time=15.704s	distance=   73.29
+instance= 82	infer_time=15.696s	distance=   72.43
+instance= 83	infer_time=15.709s	distance=   73.14
+instance= 84	infer_time=15.695s	distance=   73.14
+instance= 85	infer_time=15.716s	distance=   74.14
+instance= 86	infer_time=15.690s	distance=   85.17
+instance= 87	infer_time=15.679s	distance=   85.00
+instance= 88	infer_time=15.685s	distance=   73.29
+instance= 89	infer_time=15.669s	distance=   72.71
+instance= 90	infer_time=15.658s	distance=   72.14
+instance= 91	infer_time=15.676s	distance=   73.29
+instance= 92	infer_time=15.666s	distance=   72.14
+instance= 93	infer_time=15.663s	distance=   73.14
+instance= 94	infer_time=15.681s	distance=   73.71
+instance= 95	infer_time=15.667s	distance=   72.71
+instance= 96	infer_time=15.671s	distance=   73.00
+instance= 97	infer_time=15.669s	distance=   73.14
+instance= 98	infer_time=15.677s	distance=   73.29
+instance= 99	infer_time=15.668s	distance=   72.71
+instance=100	infer_time=15.684s	distance=   72.57
+instance=101	infer_time=15.692s	distance=   73.29
+instance=102	infer_time=15.660s	distance=   73.86
+instance=103	infer_time=15.668s	distance=   73.29
+instance=104	infer_time=15.662s	distance=   72.29
+instance=105	infer_time=15.670s	distance=   73.14
+instance=106	infer_time=15.673s	distance=   72.86
+instance=107	infer_time=15.669s	distance=   73.00
+instance=108	infer_time=15.664s	distance=   72.86
+instance=109	infer_time=15.677s	distance=   72.71
+instance=110	infer_time=15.671s	distance=   72.57
+instance=111	infer_time=15.693s	distance=   73.14
+instance=112	infer_time=15.715s	distance=   73.29
+instance=113	infer_time=15.709s	distance=   73.00
+instance=114	infer_time=15.704s	distance=   73.57
+instance=115	infer_time=15.709s	distance=   74.29
+instance=116	infer_time=15.689s	distance=   73.57
+instance=117	infer_time=15.726s	distance=   72.86
+instance=118	infer_time=15.706s	distance=   72.86
+instance=119	infer_time=15.703s	distance=   72.14
+instance=120	infer_time=15.707s	distance=   72.14
+instance=121	infer_time=15.700s	distance=   73.00
+instance=122	infer_time=15.713s	distance=   72.57
+instance=123	infer_time=15.709s	distance=   73.71
+instance=124	infer_time=15.711s	distance=   73.29
+instance=125	infer_time=15.706s	distance=   73.00
+instance=126	infer_time=15.704s	distance=   72.57
+instance=127	infer_time=15.717s	distance=   72.71
+instance=128	infer_time=15.706s	distance=   73.00
+Repeat 5 summary: total_infer=2009.103s  total_dist=9400.95  avg_infer=15.696s  avg_dist=73.44
+
+===================================
+          5 次实验平均结果          
+平均推理时间（单实例）: 15.698s
+平均路径长度:           73.44
+===================================

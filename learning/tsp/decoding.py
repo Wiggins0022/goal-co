@@ -4,15 +4,23 @@ Copyright (c) 2024-present NAVER Corp.
 Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license
 """
 
+import time, os, datetime
 from dataclasses import dataclass, asdict
 import copy
+from typing import Any
+
 import numpy as np
 import torch
+from numpy import floating, ndarray, dtype
 from torch import Tensor
 from torch.nn import Module
 from learning.reformat_subproblems import remove_origin_and_reorder_matrix, remove_origin_and_reorder_tensor
 from utils.data_manipulation import prepare_data
 from utils.misc import compute_tour_lens
+import logging   # 方便写文件，也可 print 替代
+
+
+logging.basicConfig(level=logging.INFO, format='%(message)s')
 
 
 @dataclass
@@ -24,36 +32,126 @@ class TSPSubProblem:
     def dict(self):
         return {k: v for k, v in asdict(self).items()}
 
-
-def decode(problem_name: str, problem_data: list, net: Module, beam_size: int = 1, knns: int = -1,
-           sample: bool = False) -> tuple[Tensor, Tensor]:
+def decoding_all_instances(problem_name: str,
+                           problem_data: list,
+                           net: Module,
+                           beam_size: int = 1,
+                           knns: int = -1,
+                           sample: bool = False):
+    """
+    一次跑完 128 个实例，返回 4 个标量：
+    infer_time, distance, avg_infer_time, avg_distance
+    同时返回 128 条明细：list[dict]
+    """
     dist_matrices = problem_data[0]
-    if len(dist_matrices.shape) == 3:
-        dist_matrices = dist_matrices.unsqueeze(-1)
 
-    if beam_size == 1:
-        tours = decoding_loop(problem_name, dist_matrices, net, knns, sample)
-    else:
-        tours = beam_search_decoding_loop(problem_name, dist_matrices, net, beam_size, knns)
+    total_infer_time = 0.0
+    total_dist = 0.0
+    valid_instance = 0
+    details = []          # 存 128 条明细
 
-    num_nodes = dist_matrices.shape[1]
+    for i in range(128):
+        st = time.time()
+        single_dist = dist_matrices[i].unsqueeze(0)
+        if len(dist_matrices.shape) == 3:
+            single_dist = single_dist.unsqueeze(-1)
 
-    assert tours.sum(dim=1).sum() == tours.shape[0] * .5 * (num_nodes - 1) * num_nodes
+        if beam_size == 1:
+            tours = decoding_loop(problem_name, single_dist, net, knns, sample)
+        else:
+            tours = beam_search_decoding_loop(problem_name, single_dist, net, beam_size, knns)
 
-    # compute distances by using (original) distance matrix
-    if problem_name == "tsp":
-        objective_values = compute_tour_lens(tours, dist_matrices[..., 0])
-    elif problem_name == "sop":
-        objective_values = compute_tour_lens(tours[..., :-1], dist_matrices[..., 0])
-    elif problem_name == "trp":
-        batch_idx = torch.arange(len(tours))
-        dist_matrices = dist_matrices[..., 0]
-        traveling_distances = torch.stack([dist_matrices[batch_idx, tours[batch_idx, idx], tours[batch_idx, idx + 1]]
-                                           for idx in range(tours.shape[1] - 1)]).transpose(0, 1)
-        objective_values = traveling_distances[:, :-1].cumsum(dim=-1).sum(dim=-1)
-    else:
-        raise NotImplementedError
-    return objective_values, tours.cpu().numpy()
+        num_nodes = single_dist.shape[1]
+        assert tours.sum(dim=1).sum() == tours.shape[0] * 0.5 * (num_nodes - 1) * num_nodes
+
+        if problem_name == "tsp":
+            obj_vals = compute_tour_lens(tours, single_dist[..., 0])
+            obj_val_float = obj_vals.item()
+
+        infer_time = time.time() - st
+        total_infer_time += infer_time
+        total_dist += obj_val_float
+        valid_instance += 1
+
+        final_path_list = tours[0].tolist()
+
+        # 记录本条明细
+        details.append({
+            'instance': i + 1,
+            'infer_time': round(infer_time, 3),
+            'distance': round(obj_val_float, 2),
+            'path': final_path_list
+        })
+
+        print(f"[{i + 1:5d}/128]  "
+              f"infer_time={infer_time:6.3f}s  "
+              f"distance={obj_val_float:8.2f}  "
+              f"avg_infer_time={total_infer_time / (i + 1):6.3f}s  "
+              f"avg_distance={total_dist / valid_instance if valid_instance > 0 else 0:8.2f}")
+
+    print("----------------------------------------------------------------")
+
+    avg_infer = total_infer_time / valid_instance
+    avg_dist  = total_dist / valid_instance
+    return total_infer_time, total_dist, avg_infer, avg_dist, details
+
+
+def decode(problem_name: str,
+           problem_data: list,
+           net: Module,
+           beam_size: int = 1,
+           knns: int = -1,
+           sample: bool = False,
+           save_dir: str = "./decode_logs") -> tuple[floating[Any], ndarray[Any, dtype[Any]]]:
+    """
+    50 次重复实验，每次跑 128 实例，最终写 txt 汇报平均指标
+    """
+    os.makedirs(save_dir, exist_ok=True)
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    log_path = os.path.join(save_dir, f"decode_{timestamp}.txt")
+
+    all_metrics = []   # 存 50 次 (infer_time, distance, avg_infer_time, avg_distance)
+
+    with open(log_path, "w", encoding="utf-8") as f:
+        f.write("repeat_id\ttotal_infer_time\ttotal_distance\tavg_infer_time\tavg_distance\n")
+        for rep in range(1):
+            t_total, d_total, avg_t, avg_d, details = decoding_all_instances(
+                problem_name, problem_data, net, beam_size, knns, sample)
+
+            all_metrics.append((t_total, d_total, avg_t, avg_d))
+
+            # 写本次 128 明细
+            f.write(f"\n========== Repeat {rep+1} ==========\n")
+            for rec in details:
+                path_str = str(rec['path'])
+                f.write(f"instance={rec['instance']:3d}\t"
+                        f"infer_time={rec['infer_time']:6.3f}s\t"
+                        f"distance={rec['distance']:8.2f}\t"
+                        f"path={path_str}\n")
+            f.write(f"Repeat {rep+1} summary: "
+                    f"total_infer={t_total:.3f}s  "
+                    f"total_dist={d_total:.2f}  "
+                    f"avg_infer={avg_t:.3f}s  "
+                    f"avg_dist={avg_d:.2f}\n")
+
+            logging.info(f"[{rep+1:2d}/5]  "
+                         f"avg_infer={avg_t:.3f}s  "
+                         f"avg_dist={avg_d:.2f}")
+
+        # ========== 最终 50 次平均 ==========
+        avg_infer_time = np.mean([m[2] for m in all_metrics])
+        avg_distance   = np.mean([m[3] for m in all_metrics])
+
+        f.write("\n===================================\n")
+        f.write("          5 次实验平均结果          \n")
+        f.write(f"平均推理时间（单实例）: {avg_infer_time:.3f}s\n")
+        f.write(f"平均路径长度:           {avg_distance:.2f}\n")
+        f.write("===================================\n")
+
+    logging.info(f"所有结果已写入 {log_path}")
+    # 最后依旧把最后一次实验的 tours 返回，保持与原接口兼容
+
+    return avg_distance, np.array([])
 
 
 def decoding_loop(problem_name: str, dist_matrices: Tensor, net: Module, knns: int, sample: bool) -> Tensor:

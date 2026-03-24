@@ -9,12 +9,13 @@ import torch
 
 class Tester:
 
-    def __init__(self, args, net, test_dataset, watcher=None):
+    def __init__(self, args, net, small_model, test_dataset, watcher=None):
         # supervisor for testing the model. can be called from training loop or completely independently
 
         self.problems = args.problems
         self.job_id = args.job_id
         self.net = net
+        self.small_model = small_model
         self.test_dataset = test_dataset
         self.watcher = watcher
         self.output_dir = args.output_dir
@@ -22,11 +23,14 @@ class Tester:
         self.beam_size = args.beam_size
         self.knns = args.knns
 
-    def load_model(self, path_to_model):
+    def load_model(self, path_to_model, path_to_small_model):
         device = "cuda" if torch.cuda.is_available() else "cpu"
         checkpoint = torch.load(path_to_model, map_location=device)
         self.net.load_state_dict(checkpoint["net"], strict=False)
         print("Loaded", path_to_model)
+        small_model_checkpoint = torch.load(path_to_small_model, map_location=device)
+        self.small_model.load_state_dict(small_model_checkpoint["model_state_dict"])
+        print("Loaded", path_to_small_model)
 
     def test(self, epoch_done=0):
         validate_model(self.net, self.test_dataset, epoch_done, self.watcher, self.debug, self.beam_size, self.knns,

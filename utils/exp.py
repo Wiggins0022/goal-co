@@ -6,6 +6,8 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license
 
 import os
 import torch
+
+from model.PartitionModel import PartitionModel
 from model.goal import GOAL
 from utils.misc import set_seed, get_params_to_log
 from utils.watcher import MetricsLogger
@@ -92,6 +94,8 @@ def setup_test_environment(args):
     assert args.pretrained_model is not None and os.path.exists(args.pretrained_model)
     net = GOAL(args.dim_node_idx, args.dim_emb, args.num_layers, args.dim_ff, args.activation_ff,
                args.node_feature_low_dim, args.edge_feature_low_dim, args.activation_edge_adapter, args.num_heads)
+    small_model = PartitionModel(args.embedding_dim,args.feats,args.k_sparse,args.edge_feats,args.depth)
     if torch.cuda.is_available():
         net = net.to("cuda")
-    return net
+        small_model = small_model.to("cuda")
+    return net,small_model

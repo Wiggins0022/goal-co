@@ -1,0 +1,138 @@
+repeat_id	total_infer_time	total_distance	avg_infer_time	avg_distance
+
+========== Repeat 1 ==========
+instance=  1	infer_time= 5.154s	distance=   42.88
+instance=  2	infer_time= 4.810s	distance=   37.67
+instance=  3	infer_time= 5.071s	distance=   38.33
+instance=  4	infer_time= 4.943s	distance=   38.33
+instance=  5	infer_time= 4.934s	distance=   38.56
+instance=  6	infer_time= 4.918s	distance=   38.33
+instance=  7	infer_time= 4.988s	distance=   38.33
+instance=  8	infer_time= 4.814s	distance=   38.00
+instance=  9	infer_time= 4.814s	distance=   37.22
+instance= 10	infer_time= 4.830s	distance=   39.44
+instance= 11	infer_time= 4.969s	distance=   42.50
+instance= 12	infer_time= 4.972s	distance=   35.00
+instance= 13	infer_time= 4.915s	distance=   37.89
+instance= 14	infer_time= 4.890s	distance=   37.44
+instance= 15	infer_time= 4.903s	distance=   37.56
+instance= 16	infer_time= 4.977s	distance=   37.78
+instance= 17	infer_time= 5.032s	distance=   41.12
+instance= 18	infer_time= 4.906s	distance=   37.56
+instance= 19	infer_time= 4.906s	distance=   34.90
+instance= 20	infer_time= 4.911s	distance=   37.67
+instance= 21	infer_time= 4.954s	distance=   37.22
+instance= 22	infer_time= 4.949s	distance=   39.22
+instance= 23	infer_time= 4.943s	distance=   38.78
+instance= 24	infer_time= 4.900s	distance=   38.33
+instance= 25	infer_time= 4.899s	distance=   38.22
+instance= 26	infer_time= 5.028s	distance=   42.12
+instance= 27	infer_time= 4.965s	distance=   38.67
+instance= 28	infer_time= 5.102s	distance=   37.44
+instance= 29	infer_time= 5.211s	distance=   43.75
+instance= 30	infer_time= 5.209s	distance=   38.33
+instance= 31	infer_time= 5.262s	distance=   43.62
+instance= 32	infer_time= 5.143s	distance=   38.78
+instance= 33	infer_time= 5.248s	distance=   37.44
+instance= 34	infer_time= 5.234s	distance=   42.25
+instance= 35	infer_time= 5.186s	distance=   42.62
+instance= 36	infer_time= 5.205s	distance=   41.62
+instance= 37	infer_time= 5.172s	distance=   32.36
+instance= 38	infer_time= 5.186s	distance=   38.11
+instance= 39	infer_time= 5.197s	distance=   42.50
+instance= 40	infer_time= 5.226s	distance=   42.88
+instance= 41	infer_time= 5.182s	distance=   38.33
+instance= 42	infer_time= 5.263s	distance=   42.25
+instance= 43	infer_time= 5.132s	distance=   38.67
+instance= 44	infer_time= 5.143s	distance=   37.56
+instance= 45	infer_time= 5.104s	distance=   42.88
+instance= 46	infer_time= 5.104s	distance=   38.22
+instance= 47	infer_time= 5.104s	distance=   38.56
+instance= 48	infer_time= 5.209s	distance=   38.89
+instance= 49	infer_time= 5.374s	distance=   37.89
+instance= 50	infer_time= 5.028s	distance=   43.25
+instance= 51	infer_time= 5.005s	distance=   37.67
+instance= 52	infer_time= 5.018s	distance=   37.11
+instance= 53	infer_time= 4.917s	distance=   37.78
+instance= 54	infer_time= 4.955s	distance=   43.25
+instance= 55	infer_time= 4.969s	distance=   35.20
+instance= 56	infer_time= 4.899s	distance=   38.67
+instance= 57	infer_time= 4.996s	distance=   41.38
+instance= 58	infer_time= 5.134s	distance=   38.78
+instance= 59	infer_time= 5.140s	distance=   37.44
+instance= 60	infer_time= 5.047s	distance=   36.56
+instance= 61	infer_time= 4.889s	distance=   41.75
+instance= 62	infer_time= 4.994s	distance=   38.56
+instance= 63	infer_time= 4.994s	distance=   37.89
+instance= 64	infer_time= 5.150s	distance=   37.67
+instance= 65	infer_time= 5.077s	distance=   37.33
+instance= 66	infer_time= 4.966s	distance=   37.78
+instance= 67	infer_time= 4.917s	distance=   38.44
+instance= 68	infer_time= 4.841s	distance=   39.56
+instance= 69	infer_time= 4.842s	distance=   34.20
+instance= 70	infer_time= 4.916s	distance=   38.22
+instance= 71	infer_time= 4.903s	distance=   42.38
+instance= 72	infer_time= 4.916s	distance=   42.50
+instance= 73	infer_time= 4.782s	distance=   37.67
+instance= 74	infer_time= 4.790s	distance=   38.11
+instance= 75	infer_time= 4.783s	distance=   43.38
+instance= 76	infer_time= 4.842s	distance=   38.00
+instance= 77	infer_time= 4.991s	distance=   37.56
+instance= 78	infer_time= 4.846s	distance=   42.38
+instance= 79	infer_time= 4.820s	distance=   41.25
+instance= 80	infer_time= 4.869s	distance=   37.44
+instance= 81	infer_time= 4.961s	distance=   39.11
+instance= 82	infer_time= 4.896s	distance=   34.10
+instance= 83	infer_time= 5.024s	distance=   36.78
+instance= 84	infer_time= 5.059s	distance=   42.75
+instance= 85	infer_time= 4.895s	distance=   38.56
+instance= 86	infer_time= 5.040s	distance=   38.67
+instance= 87	infer_time= 4.950s	distance=   37.78
+instance= 88	infer_time= 4.967s	distance=   43.62
+instance= 89	infer_time= 5.015s	distance=   42.75
+instance= 90	infer_time= 5.046s	distance=   34.60
+instance= 91	infer_time= 5.022s	distance=   36.78
+instance= 92	infer_time= 5.201s	distance=   33.90
+instance= 93	infer_time= 5.153s	distance=   37.22
+instance= 94	infer_time= 5.150s	distance=   38.11
+instance= 95	infer_time= 5.171s	distance=   38.00
+instance= 96	infer_time= 5.134s	distance=   37.56
+instance= 97	infer_time= 5.154s	distance=   38.33
+instance= 98	infer_time= 5.106s	distance=   42.00
+instance= 99	infer_time= 5.131s	distance=   38.33
+instance=100	infer_time= 5.167s	distance=   38.22
+instance=101	infer_time= 5.140s	distance=   38.22
+instance=102	infer_time= 5.151s	distance=   42.50
+instance=103	infer_time= 5.133s	distance=   38.56
+instance=104	infer_time= 5.124s	distance=   38.11
+instance=105	infer_time= 5.200s	distance=   37.33
+instance=106	infer_time= 5.219s	distance=   37.33
+instance=107	infer_time= 5.189s	distance=   42.12
+instance=108	infer_time= 5.006s	distance=   37.00
+instance=109	infer_time= 5.109s	distance=   42.12
+instance=110	infer_time= 5.118s	distance=   41.75
+instance=111	infer_time= 5.144s	distance=   40.50
+instance=112	infer_time= 4.934s	distance=   42.38
+instance=113	infer_time= 5.072s	distance=   38.44
+instance=114	infer_time= 4.842s	distance=   38.78
+instance=115	infer_time= 4.869s	distance=   38.00
+instance=116	infer_time= 5.026s	distance=   38.00
+instance=117	infer_time= 4.904s	distance=   37.11
+instance=118	infer_time= 4.989s	distance=   38.22
+instance=119	infer_time= 4.875s	distance=   38.44
+instance=120	infer_time= 4.905s	distance=   37.56
+instance=121	infer_time= 5.030s	distance=   42.62
+instance=122	infer_time= 4.895s	distance=   37.78
+instance=123	infer_time= 4.868s	distance=   37.33
+instance=124	infer_time= 4.863s	distance=   37.67
+instance=125	infer_time= 4.916s	distance=   38.78
+instance=126	infer_time= 5.053s	distance=   36.56
+instance=127	infer_time= 4.924s	distance=   37.78
+instance=128	infer_time= 5.001s	distance=   37.89
+Repeat 1 summary: total_infer=642.473s  total_dist=4979.22  avg_infer=5.019s  avg_dist=38.90
+
+===================================
+          1 次实验平均结果
+平均推理时间（单实例）: 5.019s
+平均路径长度:           38.90
+===================================
