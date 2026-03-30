@@ -17,7 +17,7 @@ from torch.nn import Module
 from learning.reformat_subproblems import remove_origin_and_reorder_matrix, remove_origin_and_reorder_tensor
 from utils.data_manipulation import prepare_data
 from utils.misc import compute_tour_lens
-import logging   # 方便写文件，也可 print 替代
+import logging
 
 
 logging.basicConfig(level=logging.INFO, format='%(message)s')
