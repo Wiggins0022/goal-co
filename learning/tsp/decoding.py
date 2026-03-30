@@ -17,7 +17,7 @@ from torch.nn import Module
 from learning.reformat_subproblems import remove_origin_and_reorder_matrix, remove_origin_and_reorder_tensor
 from utils.data_manipulation import prepare_data
 from utils.misc import compute_tour_lens
-import logging   # 方便写文件，也可 print 替代
+import logging
 
 
 logging.basicConfig(level=logging.INFO, format='%(message)s')
@@ -79,15 +79,15 @@ def decoding_all_instances(problem_name: str,
         details.append({
             'instance': i + 1,
             'infer_time': round(infer_time, 3),
-            'distance': round(obj_val_float, 2),
+            'distance': round(obj_val_float, 4),
             'path': final_path_list
         })
 
         print(f"[{i + 1:5d}/128]  "
               f"infer_time={infer_time:6.3f}s  "
-              f"distance={obj_val_float:8.2f}  "
+              f"distance={obj_val_float:8.4f}  "
               f"avg_infer_time={total_infer_time / (i + 1):6.3f}s  "
-              f"avg_distance={total_dist / valid_instance if valid_instance > 0 else 0:8.2f}")
+              f"avg_distance={total_dist / valid_instance if valid_instance > 0 else 0:8.4f}")
 
     print("----------------------------------------------------------------")
 
@@ -126,17 +126,17 @@ def decode(problem_name: str,
                 path_str = str(rec['path'])
                 f.write(f"instance={rec['instance']:3d}\t"
                         f"infer_time={rec['infer_time']:6.3f}s\t"
-                        f"distance={rec['distance']:8.2f}\t"
+                        f"distance={rec['distance']:8.4f}\t"
                         f"path={path_str}\n")
             f.write(f"Repeat {rep+1} summary: "
                     f"total_infer={t_total:.3f}s  "
-                    f"total_dist={d_total:.2f}  "
+                    f"total_dist={d_total:.4f}  "
                     f"avg_infer={avg_t:.3f}s  "
-                    f"avg_dist={avg_d:.2f}\n")
+                    f"avg_dist={avg_d:.4f}\n")
 
             logging.info(f"[{rep+1:2d}/5]  "
                          f"avg_infer={avg_t:.3f}s  "
-                         f"avg_dist={avg_d:.2f}")
+                         f"avg_dist={avg_d:.4f}")
 
         # ========== 最终 50 次平均 ==========
         avg_infer_time = np.mean([m[2] for m in all_metrics])
@@ -145,7 +145,7 @@ def decode(problem_name: str,
         f.write("\n===================================\n")
         f.write("          5 次实验平均结果          \n")
         f.write(f"平均推理时间（单实例）: {avg_infer_time:.3f}s\n")
-        f.write(f"平均路径长度:           {avg_distance:.2f}\n")
+        f.write(f"平均路径长度:           {avg_distance:.4f}\n")
         f.write("===================================\n")
 
     logging.info(f"所有结果已写入 {log_path}")

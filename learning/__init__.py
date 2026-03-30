@@ -6,7 +6,7 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license
 
 from learning.tsp.decoding import decode as decode_tsp_like
 from learning.pctsp.decoding import decode as decode_pctsp
-from learning.cvrp.decoding import decode as decode_cvrp_like
+from learning.cvrp.decoding_cvrp import decode as decode_cvrp_like
 from learning.op.decoding import decode as decode_op
 from learning.cvrptw.decoding import decode as decode_cvrptw
 from learning.mvc.decoding import decode as decode_mvc

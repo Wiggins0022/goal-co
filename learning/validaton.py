@@ -43,6 +43,7 @@ def get_minibatch_val_test_metrics(net, beam_size, knns, data, problem_name):
     net.eval()
     with torch.no_grad():
         gt_values = problem_data[-1]
+        print(f"GT values: {gt_values.mean().item():.4f}")
         predicted_values, _ = decoding_fn[problem_name](problem_name, problem_data, net, beam_size, knns)
 
     opt_gap = get_opt_gap(predicted_values, gt_values, problem_name)
