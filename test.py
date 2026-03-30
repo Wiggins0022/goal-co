@@ -16,14 +16,14 @@ if __name__ == "__main__":
     # =========================================================================
 
     # 模型路径配置
-    PRETRAINED_MODEL_PATH = "./pretrained/single_task/tsp.best"
+    PRETRAINED_MODEL_PATH = "./pretrained/single_task/cvrp.best"
     SMALL_MODEL_PATH = "./pretrained/checkpoint-partition-300.pt"
 
     # 问题类型配置
-    PROBLEM_TYPE = ["tsp"]  # 解决的问题类型
+    PROBLEM_TYPE = ["cvrp"]  # 解决的问题类型
 
     # 数据集路径配置
-    TEST_DATASET_PATH = ["data/atsp100_test.npz"]  # 测试数据路径
+    TEST_DATASET_PATH = ["data/cvrp100_test.npz"]  # 测试数据路径
 
     # 评估参数配置
     BEAM_SIZE = 1  # 束搜索大小，1表示贪心解码
